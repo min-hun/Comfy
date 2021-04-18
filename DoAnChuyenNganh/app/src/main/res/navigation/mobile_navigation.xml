@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.doanchuyennganh.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.doanchuyennganh.ui.notifications.NotificationsFragment"
+        android:label="Thông báo"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.doanchuyennganh.ui.message.Message"
+        android:label="Nhắn tin"
+        tools:layout="@layout/message_fragment" />
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.doanchuyennganh.ui.dashboard.DashboardFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_menu_profile_fragment"
+            app:destination="@id/menu_profile_fragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_info_app_fragment"
+            app:destination="@id/info_app_fragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_utility_fragment"
+            app:destination="@id/utility_fragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_setting_fragment"
+            app:destination="@id/setting_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bill_info"
+        android:name="com.example.doanchuyennganh.ui.notifications.Notibill"
+        android:label="Hoa don"
+        tools:layout="@layout/notibill_fragment" >
+        <action
+            android:id="@+id/action_nav_bill_info_to_pay_fragment"
+            app:destination="@id/pay_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menu_profile_fragment"
+        android:name="com.example.doanchuyennganh.ui.dashboard.MenuInfo"
+        android:label="Info"
+        tools:layout="@layout/menu_info_fragment" />
+    <fragment
+        android:id="@+id/info_app_fragment"
+        android:name="com.example.doanchuyennganh.ui.dashboard.InFoApp"
+        android:label="Infoapp"
+        tools:layout="@layout/activity_in_fo_app" />
+    <fragment
+        android:id="@+id/utility_fragment"
+        android:name="com.example.doanchuyennganh.ui.dashboard.Utility"
+        android:label="Utility"
+        tools:layout="@layout/fragment_utility" >
+        <action
+            android:id="@+id/action_utility_fragment_to_fragment_datxe"
+            app:destination="@id/fragment_datxe" />
+        <action
+            android:id="@+id/action_utility_fragment_to_fragment_phonggym"
+            app:destination="@id/fragment_phonggym" />
+        <action
+            android:id="@+id/action_utility_fragment_to_fragment_yte"
+            app:destination="@id/fragment_yte" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setting_fragment"
+        android:name="com.example.doanchuyennganh.ui.dashboard.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/pay_fragment"
+        android:name="com.example.doanchuyennganh.ui.PayFragment"
+        android:label="Pay"
+        tools:layout="@layout/fragment_pay" />
+    <fragment
+        android:id="@+id/fragment_datxe"
+        android:name="com.example.doanchuyennganh.ui.TienIch.DatXeFragment"
+        android:label="Đặt xe"
+        tools:layout="@layout/fragment_dat_xe"
+        />
+    <fragment
+        android:id="@+id/fragment_yte"
+        android:name="com.example.doanchuyennganh.ui.TienIch.YteFragment"
+        android:label="Y Tế"
+        tools:layout="@layout/fragment_yte"
+        />
+    <fragment
+        android:id="@+id/fragment_phonggym"
+        android:name="com.example.doanchuyennganh.ui.TienIch.PhongGymFragment"
+        android:label="Phòng Gym"
+        tools:layout="@layout/fragment_phong_gym"
+        />
+
+</navigation>

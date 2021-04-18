@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorCam">
+
+                <TextView
+                    android:id="@+id/tvmenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="QUẢN LÝ"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgavtinfo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/tvmenu"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/boss_man" />
+
+                <TextView
+                    android:id="@+id/tvidinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvmenu"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@+id/imgavtinfo"
+                    android:text="ADMIN"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvnote_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvidinfo"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imgavtinfo"
+                    android:text="Xem thông tin của bạn" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="75dp"
+                    android:src="@drawable/arrow_right" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/tvnote_info"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/dottedline"></ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlchucnang1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlinfo"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorCamPastel">
+
+                <ImageView
+                    android:id="@+id/imgChucnang1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/icthem" />
+
+                <TextView
+                    android:id="@+id/tvchucnang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/imgChucnang1"
+                    android:text="Thêm tin tức"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow_right" />
+
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/imgChucnang1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/dottedline" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlchucnang2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlchucnang1"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorCamPastel">
+
+                <ImageView
+                    android:id="@+id/imgchucnang2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/quanlyhoadon" />
+
+                <TextView
+                    android:id="@+id/tvchucnang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/imgchucnang2"
+                    android:text="Quản lý hóa đơn"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow_right" />
+
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/imgchucnang2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/dottedline" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlchucnang3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlchucnang2"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorCamPastel">
+
+                <ImageView
+                    android:id="@+id/imgchucnang3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/quanlycudan" />
+
+                <TextView
+                    android:id="@+id/tvchucnang3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/imgchucnang3"
+                    android:text="Quản lý cư dân"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    />
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/imgchucnang3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/dottedline"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlchucnang4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlchucnang3"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorCamPastel">
+
+                <ImageView
+                    android:id="@+id/imgchucnang4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/info_icon" />
+
+                <TextView
+                    android:id="@+id/tvinfoapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/imgchucnang4"
+                    android:text="Thông tin về Adminnistrators"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    />
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/imgchucnang4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/dottedline"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rllogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlchucnang4"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorCamPastel">
+
+                <ImageView
+                    android:id="@+id/imglogout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/logout_icon" />
+
+                <TextView
+                    android:id="@+id/tvlogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/imglogout"
+                    android:text="Đăng xuất"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/arrow_right" />
+
+                <ImageView
+                    android:layout_width="390dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/imglogout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/dottedline" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

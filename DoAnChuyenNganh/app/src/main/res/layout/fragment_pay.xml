@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlpayyy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCam">
+
+            <ImageView
+                android:id="@+id/imgarrowpay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/tvinfoapplayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="PHƯƠNG THỨC THANH TOÁN "
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlpay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlpayyy"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorCamPastel">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvpay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Chọn phương thức thanh toán"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiền mặt"
+                    android:layout_below="@+id/tvpay1"
+                    android:layout_marginLeft="10dp" />
+
+                <RadioButton
+                    android:id="@+id/rbpay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chuyển khoản qua thẻ ngân hàng"
+                    android:layout_below="@+id/rbpay"
+                    android:layout_marginLeft="10dp" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlpay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlpay2"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorCamPastel"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvpay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Tên ngân hàng:"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/flpay"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvpay1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tvpay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flpay"
+                android:layout_marginLeft="10dp"
+                android:text="Tên chủ tài khoản:"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/flpayy2"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvpay2"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="true"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tvpay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flpayy2"
+                android:layout_marginLeft="10dp"
+                android:text="Số tài khoản:"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/flpayyy3"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvpay3"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlpay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlpay3"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorCamPastel"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvpay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu ý: "
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/tvpayy5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tvpay4"
+                android:textColor="@color/colorBlack"
+                android:text="- Cư dân chọn phương thức thanh toán phù hợp đè thanh toán cho ban quản lý"/>
+            <TextView
+                android:id="@+id/tvpay6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tvpayy5"
+                android:textColor="@color/colorBlack"
+                android:text="- Với phương thức thanh toán qua ngân hàng, cư dân vui lòng cung cấp Tên tài khoản và Số tài khoản để Ban quản lý xác nhận thông tin chính xác. "/>
+            <TextView
+                android:id="@+id/tvpay7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvpay6"/>
+        </RelativeLayout>
+        <Button
+            android:layout_below="@+id/rlpay4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Xác nhận"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorCam"
+            />
+    </RelativeLayout>
+</LinearLayout>

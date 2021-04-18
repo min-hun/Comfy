@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Trang Chủ</string>
+    <string name="title_dashboard">Menu</string>
+    <string name="title_notifications">Thông Báo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="block">
+        <item name ="blockA">Block A</item>
+        <item name ="blockB">Block B</item>
+        <item name ="blockC">Block C</item>
+    </string-array>
+    <string-array name="cars">
+        <item name ="4cho">4 chỗ</item>
+        <item name ="7cho">7 chỗ</item>
+    </string-array>
+</resources>

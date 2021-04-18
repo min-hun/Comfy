@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.Utility">
+    <RelativeLayout
+        android:id="@+id/rlutilityclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCamPastel">
+        <TextView
+            android:id="@+id/tvutilityclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgutilityclick"
+            android:text="Tiện ích"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgutilityclick"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow_left" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rldatxe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlinfoapp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorCamPastel">
+        <ImageView
+            android:id="@+id/imglogout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_directions_car_24"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvlogout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/imglogout"
+            android:text="Đặt xe"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_right"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/imglogout"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/dottedline"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rllogout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlinfoapp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorCamPastel">
+
+        <ImageView
+            android:id="@+id/imglogout1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_accessibility_24" />
+
+        <TextView
+            android:id="@+id/tvlogout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/imglogout1"
+            android:text="Phòng Gym"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_right"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/imglogout1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/dottedline"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rllogout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlinfoapp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorCamPastel">
+        <ImageView
+            android:id="@+id/imglogout7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_medical_services_24"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/tvlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/imglogout7"
+            android:text="Y tế"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow_right"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            />
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/imglogout7"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/dottedline"/>
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+</LinearLayout>

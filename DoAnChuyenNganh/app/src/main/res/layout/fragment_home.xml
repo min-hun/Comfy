@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TRANG CHỦ"
+            android:textColor="@color/colorCam"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_news"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtitle"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapebgsearch"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Tìm kiếm "
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_news"
+            android:layout_width="match_parent"
+            android:layout_height="458dp"
+            android:layout_below="@+id/sv_news"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

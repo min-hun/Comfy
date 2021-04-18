@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="402dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/logoadmin"
+       android:id="@+id/logonehihi"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearhihi"
+        android:layout_below="@+id/logonehihi"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Đăng Nhập"
+            android:textSize="40dp"
+            android:textColor="@color/colorCam"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/etID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="admin1"
+            android:textSize="14dp"
+            android:paddingTop="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="192a"
+            android:inputType="textPassword"
+            android:textSize="14dp"
+            android:paddingTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="Đăng Nhập"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorCam"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</RelativeLayout>

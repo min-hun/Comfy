@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="128dp"
+        android:background="@color/colorCam"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tv_apartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCam"
+            android:layout_marginLeft="10dp"
+            android:text="6_12"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tv_chuho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Chủ hộ: "
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_chuho"
+            android:padding="10dp"
+            android:text="Nhi"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_owner"
+            android:layout_marginTop="-3dp"
+            android:padding="10dp"
+            android:text="SĐT: "
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_owner"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@+id/tv_sdt"
+            android:padding="10dp"
+            android:text="0866863754"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorCamPastel"
+            android:text="Chỉnh sửa"
+            />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/btn_edit"
+            android:background="@color/colorGrey"
+            android:text="Xóa"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>

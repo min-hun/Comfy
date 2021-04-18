@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rlmessage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorCam">
+
+        <TextView
+            android:id="@+id/tvmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="NHẮN TIN"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvmessage1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/colorCamPastel">
+
+        <RelativeLayout
+            android:id="@+id/rl123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mesage">
+
+            <TextView
+                android:id="@+id/tvpay123rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Xin chào!"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl123"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mesage">
+
+            <TextView
+                android:id="@+id/tvpay1234rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Xin chào!"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etnhantin"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:hint="Nhập tin nhắn" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/etnhantin"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorCam"
+            android:text="Gửi"
+            android:textSize="9dp" />
+    </RelativeLayout>
+</LinearLayout>

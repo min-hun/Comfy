@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.dashboard.SettingFragment">
+    <RelativeLayout
+        android:id="@+id/rlsettingclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCamPastel">
+        <TextView
+            android:id="@+id/tvsettingclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Cài đặt"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imgsettingclick"/>
+        <ImageView
+            android:id="@+id/imgsettingclick"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlthongbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlsettingclick"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_thongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            app:switchPadding="270dp" />
+
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/switch_thongbao"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dottedline"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlchangepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlthongbao"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tvchangepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Đổi mật khẩu"
+            android:textColor="@color/colorBlack" />
+        <ImageView
+            android:id="@+id/imgchangepass"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvchangepass"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dottedline"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rllanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlchangepass"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/tvlanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Ngôn ngữ"
+            android:textColor="@color/colorBlack"/>
+        <ImageView
+            android:id="@+id/imglanguage"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/arrow_right"/>
+        <ImageView
+            android:layout_width="390dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvlanguage"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/dottedline"/>
+    </RelativeLayout>
+</RelativeLayout>

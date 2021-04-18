@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TienIch.PhongGymFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:src="@drawable/phonggym"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Các gói đăng ký: "
+    android:layout_marginTop="220dp"
+    android:textColor="@color/colorBlack"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text=" - 200.000vnd/tháng"
+        android:textStyle="bold"
+        android:textColor="@color/colorDarkRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text=" - 1.000.000vnd/6 tháng"
+        android:textStyle="bold"
+        android:textColor="@color/colorDarkRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:text=" - 1.800.000vnd/1 năm"
+        android:textStyle="bold"
+        android:textColor="@color/colorDarkRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text=" Giờ hoạt động: 6am - 10pm"
+        android:textStyle="italic"
+        android:textColor="@color/colorBlack"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:text="Liên hệ nhân viên tại quầy để đăng ký hoặc số điện thoại: "
+        android:textStyle="bold"
+        android:textColor="@color/colorDarkRed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:text=" 0793470999"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

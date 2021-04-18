@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/imgavt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgavt"
+        android:background="@drawable/contentnews">
+
+        <TextView
+            android:id="@+id/tvDaynews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/timenews"
+            android:text="Hôm nay, 09/05/2020"
+            android:textColor="@color/colorWhite"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imgnews"
+            android:layout_width="230dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/tvDaynews"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvnews"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgnews"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvTimenews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnews"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="21:00"
+            android:textSize="10dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnchinhsua"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rl123"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/btnxoa"
+        android:layout_marginRight="10dp"
+        android:text="Chỉnh sửa"
+        android:textSize="9dp"
+        android:background="@color/colorCam"
+        android:textColor="@color/colorWhite"
+        />
+    <Button
+        android:id="@+id/btnxoa"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/rl123"
+        android:text="Xóa"
+        android:textSize="9dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorCam"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"/>
+</RelativeLayout>
